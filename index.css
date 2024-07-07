@@ -206,7 +206,7 @@ body {
 }
 
 .menu-toggle ion-icon{
-    font-size: 2.8rem;
+    font-size: 8rem;
     color: white;
 }
 
@@ -253,7 +253,7 @@ body {
     .navbar{
         height: 0px;
         position: absolute;
-        top: 70px;
+        top: 85px;
         left: 0px;
         right: 0px;
         width: 100vw;
@@ -305,6 +305,8 @@ body {
 
 
 
+/* HOME */
+
 .home{
     min-height: 100vh;
     width: 100vw;
@@ -321,9 +323,6 @@ body {
 }
 
 .home h1 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
     gap: 10px;
     color: #fff;
     font-size: 5.5rem;
@@ -366,6 +365,43 @@ body {
     animation-duration: 4s;
     opacity: .5;
 }
+
+
+
+@media screen and (max-width:1200px){
+   .home h1{
+    font-size: 4rem;
+   }
+}
+
+@media screen and (max-width:900px){
+    .home {
+        background-image: linear-gradient(to bottom, rgba(0, 46, 95, 0.7), rgba(195, 195, 244, 0.7)), url(https://img.freepik.com/free-photo/corporate-workers-brainstorming-together_23-2148804570.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+@media screen and (max-width:650px){
+
+    .header h1{
+        line-height: 2.2rem;
+        font-weight: 450;
+    }
+    .home{
+        padding: 0px 0px;
+    }
+    .home h1{
+        font-size: 3.5rem;
+       }
+
+       .home h2{
+        line-height: 1.1;
+       }
+}
+
 
 
 
