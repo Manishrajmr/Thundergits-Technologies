@@ -478,7 +478,7 @@ body {
 }
 
 
-.about .content .btn{
+.btn{
     background-color:transparent;
     padding: 1px 30px;
     border-radius: 5rem; 
@@ -495,7 +495,7 @@ body {
     width: fit-content;
     margin: 20px auto;
 }
-.about .content a:hover .btn{
+.btn:hover{
     background-color:#002e5f;
     color: white;
     transition: 0.3s ease;
@@ -531,10 +531,11 @@ body {
 
 .service .container{
     max-width: 1140px;
-    margin: 0 auto;
+    margin-inline: auto;
     text-align: center;
     /* background-color: aqua; */
     padding: 0px 15px;
+    padding: 40px;
     
 }
 
@@ -634,7 +635,7 @@ body {
 
 
 @media screen and (min-width:1200px) {
-    .service .container{
+    .container{
         max-width: 1140px;
     }
     
@@ -644,7 +645,7 @@ body {
 
 
 @media (min-width: 1000px) and (max-width: 1200px){
-    .service .container {
+    .container {
         max-width: 960px;
     }
 }
@@ -655,7 +656,7 @@ body {
     .service-heading p{
         font-size: 1.6rem;
     }
-    .service .container {
+    .container {
         max-width: 720px;
     }
 
@@ -698,8 +699,8 @@ body {
     }
     .container {
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -710,11 +711,192 @@ body {
 } 
 
 
+/* COUNTERS */
+
+
+.counters {
+    background-image: url(../images/img2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.counters .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 1140px;
+    margin-inline:auto ;
+    grid-gap: 30px;
+    /* background-color: #52ab98; */
+}
+
+.counters ion-icon{
+    color: white;
+    font-size: 4rem;
+    margin-inline: auto;
+
+}
+
+.counters .counter{
+    font-size: 4rem;
+}
+
+.counters h3{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px){
+    .container {
+        max-width: 720px;
+    }
+
+    .counters h3{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 750px){
+    .counters .container {
+        width: 100%;
+    }
+
+    .counters .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-inline:auto ;
+        
+    }
+    .counters .container .border{
+        border-style:outset;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-bottom: 20px;
+        
+    }
+
+
+}
+
+
+/* COMMUNICATE */
+
+
+.communicate{
+    background-image: url(./images/img3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 15px;
+    color: white;
+}
+
+.communicate h3{
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.communicate p{
+    font-size: 2rem;
+
+}
+
+.communicate a{
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 15px;
+}
+
+
+@media screen  and (max-width:810px){
+    .communicate h3{
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .communicate p{
+        font-size: 1.5rem;
+    
+    }
+
+    
+}
+
+@media screen  and (max-width:570px){
+    .communicate h3{
+        margin-top: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    .communicate p{
+        padding-top: 15px;
+        font-size: 1.5rem;
+    
+    }
+
+    .communicate .btn{
+       padding: 2px 10px;
+       font-size: 1.2rem;
+    }
+}
+
+
+
+/* CLIENTS*/
+
+.clients .container{
+    margin-inline: auto;
+    /* background-color: #002e5f; */
+}
+
+.client-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.client-header p{
+    font-size: 2rem;
+
+}
+
+.clients-crousel{
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    
+}
+
+.img-cover img{
+   width: 180px;
+}
 
 
 
 
+/* CONTACT US */
 
+.contact .container{
+    margin-inline: auto;
+}
+
+.contact-header {
+    /* background-color: #52ab98; */
+    margin-inline: auto;
+    text-align: center;
+}
 
 
 
