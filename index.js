@@ -23,3 +23,19 @@ function handleScroll() {
 
 // Event listener to call the handleScroll function on scroll
 window.addEventListener('scroll', handleScroll);
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 100) {
+        backToTopButton.classList.add('active');
+    } else {
+        backToTopButton.classList.remove('active');
+    }
+});
